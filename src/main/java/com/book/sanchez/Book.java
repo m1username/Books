@@ -1,5 +1,6 @@
 package main.java.com.book.sanchez;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
@@ -7,7 +8,7 @@ public class Book {
 
     private String author;
     private Cover cover;
-    private List<Page> pages;
+    private List<Page> pages = new ArrayList<>();
 
     public String getAuthor() {
         return author;
@@ -31,6 +32,12 @@ public class Book {
 
     public void setPages(List<Page> pages) {
         this.pages = pages;
+    }
+
+    // переопределение метода toString()
+    @Override
+    public String toString() {
+        return "Book author: " + author + ", number of pages: " + pages.size() + ", cover is: " + cover;
     }
 
 }
