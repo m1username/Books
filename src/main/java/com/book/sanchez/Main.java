@@ -12,6 +12,3 @@ public class Main {
 
 
 }
-
- /*   переопредилить toString() класса Book (помни про аннотацию -  маркер) под такой вывод
-        Book author: {author}, number of pages: {pagesCount}, {color} cover is {hard/soft}. */
