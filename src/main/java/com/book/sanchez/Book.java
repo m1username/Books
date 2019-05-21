@@ -24,7 +24,6 @@ public class Book {
 
     public void setCover(Cover cover) {
         this.cover = cover;
-
     }
 
     public List<Page> getPages() {
