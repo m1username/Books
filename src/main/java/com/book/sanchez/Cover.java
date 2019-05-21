@@ -19,6 +19,11 @@ public class Cover {
 
     public void setSoft(boolean soft) {
         isSoft = soft;
+            }
+
+    Cover () {
+        this.color = "black";
+        this.isSoft = false;
     }
 
 }

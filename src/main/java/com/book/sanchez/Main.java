@@ -9,11 +9,12 @@ public class Main {
     public static void main(String[] args) {
         //book
         Book book = new Book();
-        Cover cover = new Cover();
+        /*Cover cover = new Cover();
         cover.setColor("black");
         cover.setSoft(false);
+        book.setCover(cover);*/
+        book.setCover(new Cover());
 
-        book.setCover(cover);
 
         Page page = new Page();
         page.setText("New text of first book");
@@ -25,11 +26,11 @@ public class Main {
 
         //book2
         Book book2 = new Book();
-        Cover cover2 = new Cover();
+        /*Cover cover2 = new Cover();
         cover2.setColor("black");
         cover2.setSoft(false);
-
-        book2.setCover(cover2);
+        book2.setCover(cover2);*/
+        book2.setCover(new Cover());
 
         Page page2 = new Page();
         page2.setText("New text of second book");
@@ -45,11 +46,11 @@ public class Main {
 
         //book3
         Book book3 = new Book();
-        Cover cover3 = new Cover();
+        /*Cover cover3 = new Cover();
         cover3.setColor("black");
         cover3.setSoft(false);
-
-        book3.setCover(cover2);
+        book3.setCover(cover3);*/
+        book3.setCover(new Cover());
 
         Page page3 = new Page();
         page3.setText("New text of third book");
