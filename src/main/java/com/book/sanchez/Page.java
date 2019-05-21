@@ -9,6 +9,5 @@ public class Page {
 
     public void setText(String text) {
         this.text = text;
-        text = "New text of new book";
     }
 }

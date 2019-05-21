@@ -24,7 +24,7 @@ public class Book {
 
     public void setCover(Cover cover) {
         this.cover = cover;
-        cover = getCover();//??
+
     }
 
     public List<Page> getPages() {
@@ -39,7 +39,7 @@ public class Book {
     @Override
     public String toString() {
         return "Book author: " + author + ", number of pages: " + pages.size() + ", cover is: "
-                + cover.getColor() + " and " + cover.isHard();
+                + cover.getColor() + " and " + (cover.isSoft() ? "soft" : "hard");
     }
 
 }
