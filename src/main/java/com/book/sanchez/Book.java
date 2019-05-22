@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Book {
 
-
     private String author;
     private Cover cover;
     private List<Page> pages = new ArrayList<>();
@@ -32,6 +31,10 @@ public class Book {
 
     public void setPages(List<Page> pages) {
         this.pages = pages;
+    }
+
+    public Book(Cover cover){
+        this.cover = cover;
     }
 
     // переопределение метода toString()
