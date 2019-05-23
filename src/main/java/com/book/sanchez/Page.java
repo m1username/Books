@@ -3,6 +3,10 @@ package main.java.com.book.sanchez;
 public class Page {
     private String text;
 
+    public Page(String text) {
+        this.text = text;
+    }
+
     public String getText() {
         return text;
     }
