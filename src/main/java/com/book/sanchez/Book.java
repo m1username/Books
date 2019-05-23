@@ -9,8 +9,9 @@ public class Book {
     private Cover cover;
     private List<Page> pages = new ArrayList<>();
 
-    public Book(Cover cover) {
+    public Book(Cover cover, String author) {
         this.cover = cover;
+        this.author = author;
     }
 
     public String getAuthor() {
@@ -43,5 +44,4 @@ public class Book {
         return "Book author: " + author + ", number of pages: " + pages.size() + ", cover is: "
                 + cover.getColor() + " and " + (cover.isSoft() ? "soft" : "hard");
     }
-
 }
