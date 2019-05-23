@@ -1,0 +1,6 @@
+
+'#' Ignore objects and archives.
+
+.idea/
+
+target/

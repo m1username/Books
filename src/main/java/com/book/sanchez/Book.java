@@ -9,6 +9,10 @@ public class Book {
     private Cover cover;
     private List<Page> pages = new ArrayList<>();
 
+    public Book(Cover cover) {
+        this.cover = cover;
+    }
+
     public String getAuthor() {
         return author;
     }
@@ -31,10 +35,6 @@ public class Book {
 
     public void setPages(List<Page> pages) {
         this.pages = pages;
-    }
-
-    public Book(Cover cover){
-        this.cover = cover;
     }
 
     // переопределение метода toString()
