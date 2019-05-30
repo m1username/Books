@@ -1,17 +1,17 @@
 package main.java.com.book.sanchez;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
 
     private String author;
     private Cover cover;
-    private List<Page> pages = new ArrayList<>();
+    private List<Page> pages;
 
-    public Book(Cover cover, String author) {
+    public Book(Cover cover, String author, List<Page> pages) {
         this.cover = cover;
         this.author = author;
+        this.pages = pages;
     }
 
     public String getAuthor() {
