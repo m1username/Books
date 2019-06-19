@@ -8,10 +8,7 @@ public class Book {
     private Cover cover;
     private List<Page> pages;
 
-    public Book(Cover cover, String author, List<Page> pages) {
-        this.cover = cover;
-        this.author = author;
-        this.pages = pages;
+    private Book() {
     }
 
     public String getAuthor() {
@@ -43,5 +40,32 @@ public class Book {
     public String toString() {
         return "Book author: " + author + ", number of pages: " + pages.size() + ", cover is: "
                 + cover.getColor() + " and " + (cover.isSoft() ? "soft" : "hard");
+    }
+
+    public static class Builder {
+        private Book newBook;
+
+        public Builder() {
+            newBook = new Book();
+        }
+
+        public Builder withAuthor(String author) {
+            newBook.author = author;
+            return this;
+        }
+
+        public Builder withCover(Cover cover) {
+            newBook.cover = cover;
+            return this;
+        }
+
+        public Builder withPages(List<Page> pages) {
+            newBook.pages = pages;
+            return this;
+        }
+
+        public Book build() {
+            return newBook;
+        }
     }
 }
