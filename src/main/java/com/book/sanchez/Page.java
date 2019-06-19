@@ -1,4 +1,4 @@
-package main.java.com.book.sanchez;
+package com.book.sanchez;
 
 public class Page {
     private String text;

@@ -1,4 +1,4 @@
-package main.java.com.book.sanchez;
+package com.book.sanchez;
 
 import java.util.ArrayList;
 import java.util.List;
