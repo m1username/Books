@@ -3,7 +3,7 @@ package com.book.sanchez;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Util {
+public class PageFactory {
     public static List<Page> getPages(Page page1) {
         List<Page> pages = new ArrayList<>();
         pages.add(page1);
@@ -24,4 +24,11 @@ public class Util {
         pages.add(page3);
         return pages;
     }
+
+    /*public static List<Page> createPageList(List<String> texts) {
+        new Page("text1");
+        new Page("text2");
+        new Page("text3");
+        return texts;
+    }*/
 }

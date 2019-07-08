@@ -11,7 +11,7 @@ public class BookTest {
         Book bookTest = new Book.Builder()
                 .withCover(new Cover())
                 .withAuthor("Shewchenko")
-                .withPages(Util.getPages(new Page("text")))
+                .withPages(PageFactory.getPages(new Page("text")))
                 .build();
 
         //запускаем тест

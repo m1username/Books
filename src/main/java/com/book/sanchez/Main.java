@@ -7,21 +7,21 @@ public class Main {
         Book book = new Book.Builder()
                 .withCover(new Cover())
                 .withAuthor("Shewchenko")
-                .withPages(Util.getPages(new Page("text")))
+                .withPages(PageFactory.getPages(new Page("text")))
                 .build();
 
         //book2
         Book book2 = new Book.Builder()
                 .withCover(new Cover("green", true))
                 .withAuthor("Block")
-                .withPages(Util.getPages(new Page("text"), new Page("text")))
+                .withPages(PageFactory.getPages(new Page("text"), new Page("text")))
                 .build();
 
         //book3
         Book book3 = new Book.Builder()
                 .withCover(new Cover())
                 .withAuthor("Skovoroda")
-                .withPages(Util.getPages(new Page("text"), new Page("text"), new Page("text")))
+                .withPages(PageFactory.getPages(new Page("text"), new Page("text"), new Page("text")))
                 .build();
 
         System.out.println(book.toString());
