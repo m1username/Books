@@ -25,10 +25,14 @@ public class PageFactory {
         return pages;
     }
 
-    /*public static List<Page> createPageList(List<String> texts) {
-        new Page("text1");
-        new Page("text2");
-        new Page("text3");
-        return texts;
-    }*/
+    public static List<Page> createPageList(List<String> texts) {
+        List<Page> PageList = new ArrayList<>();
+        PageList.add(new Page("text1"));
+        PageList.add(new Page("text2"));
+        PageList.add(new Page("text3"));
+//        new Page("text1");
+//        new Page("text2");
+//        new Page("text3");
+        return PageList;
+    }
 }
