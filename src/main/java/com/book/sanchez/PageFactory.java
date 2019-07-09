@@ -30,9 +30,6 @@ public class PageFactory {
         PageList.add(new Page("text1"));
         PageList.add(new Page("text2"));
         PageList.add(new Page("text3"));
-//        new Page("text1");
-//        new Page("text2");
-//        new Page("text3");
         return PageList;
     }
 }
