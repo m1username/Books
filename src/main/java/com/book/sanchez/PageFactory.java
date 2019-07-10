@@ -27,9 +27,9 @@ public class PageFactory {
 
     public static List<Page> createPageList(List<String> texts) {
         List<Page> PageList = new ArrayList<>();
-        PageList.add(new Page("text1"));
-        PageList.add(new Page("text2"));
-        PageList.add(new Page("text3"));
+        for (String text : texts) {
+            PageList.add(new Page(text));
+        }
         return PageList;
     }
 }
