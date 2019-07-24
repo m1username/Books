@@ -3,26 +3,21 @@ package com.book.sanchez;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.common.collect.ImmutableList;
+
+
 public class PageFactory {
-    public static List<Page> getPages(Page page1) {
-        List<Page> pages = new ArrayList<>();
-        pages.add(page1);
-        return pages;
+    public static List<Page> getPages(Page page) {
+        return ImmutableList.of(page);
     }
 
-    public static List<Page> getPages(Page page1, Page page2) {
-        List<Page> pages = new ArrayList<>();
-        pages.add(page1);
-        pages.add(page2);
-        return pages;
+    public static List<Page> getPages(Page page, Page page2) {
+
+        return ImmutableList.of(page, page2);
     }
 
-    public static List<Page> getPages(Page page1, Page page2, Page page3) {
-        List<Page> pages = new ArrayList<>();
-        pages.add(page1);
-        pages.add(page2);
-        pages.add(page3);
-        return pages;
+    public static List<Page> getPages(Page page, Page page2, Page page3) {
+        return ImmutableList.of(page, page2, page3);
     }
 
     public static List<Page> createPageList(List<String> texts) {
