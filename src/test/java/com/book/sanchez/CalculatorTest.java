@@ -14,26 +14,26 @@ public class CalculatorTest {
 
     @Test
     public void getSubtraction() {
-        assertEquals(2, Calculator.getSubtraction(4,2), 0.1);
+        assertEquals(2.0, Calculator.getSubtraction(4.0,2.0), 0.1);
     }
 
     @Test
     public void getMultiple() {
-        assertEquals(8, Calculator.getMultiple(2,4), 0.1);
+        assertEquals(8.0, Calculator.getMultiple(2.0,4.0), 0.1);
     }
 
     @Test
     public void getDivide() {
-        assertEquals(2, Calculator.getDivide(4,2), 0.1);
+        assertEquals(2.0, Calculator.getDivide(4.0,2.0), 0.1);
     }
 
     @Test
     public void getExponentiation() {
-        assertEquals(16, Calculator.getExponentiation(2,4), 0.1);
+        assertEquals(16.0, Calculator.getExponentiation(2.0,4.0), 0.1);
     }
 
     @Test
     public void getSquareRoot() {
-        assertEquals(2, Calculator.getSquareRoot(4), 0.1);
+        assertEquals(2.0, Calculator.getSquareRoot(64.0, 6.0), 0.1);
     }
 }
