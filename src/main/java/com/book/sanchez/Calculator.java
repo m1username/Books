@@ -21,7 +21,7 @@ public class Calculator {
         return Math.pow(a, b);
     }
 
-    public static double getSquareRoot(double a, double b) {
+    public static double getRoot(double a, double b) {
         return Math.pow(a, 1.0/b);
     }
 }
