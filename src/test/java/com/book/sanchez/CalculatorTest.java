@@ -35,4 +35,39 @@ public class CalculatorTest {
     public void getRoot() {
         assertEquals(2.0, Calculator.getRoot(64.0, 6.0), 0.1);
     }
+
+    @Test
+    public void calculateSum() {
+        assertEquals(6.0, Calculator.calculate("2.0+4.0"), 0.1);
+    }
+
+    @Test
+    public void calculateSubtraction() {
+        assertEquals(2.0, Calculator.calculate("4.0- 2"), 0.1);
+    }
+
+    @Test
+    public void calculateMultiple() {
+        assertEquals(8.0, Calculator.calculate("4 *2.0"), 0.1);
+    }
+
+    @Test
+    public void calculateDivide() {
+        assertEquals(2.0, Calculator.calculate("4.0 / 2.0"), 0.1);
+    }
+
+    @Test
+    public void calculateExponentiation() {
+        assertEquals(16.0, Calculator.calculate("4.0 ^ 2.0"), 0.1);
+    }
+
+    @Test
+    public void calculateRoot() {
+        assertEquals(2.0, Calculator.calculate("64.0 # 6.0"), 0.1);
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void testUOException() throws UnsupportedOperationException {
+        assertEquals(2.0, Calculator.calculate("64.0 & 6.0"), 0.1);
+    }
 }
