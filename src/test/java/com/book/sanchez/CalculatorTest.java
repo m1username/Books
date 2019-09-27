@@ -68,6 +68,6 @@ public class CalculatorTest {
 
     @Test(expected = UnsupportedOperationException.class)
     public void testUOException() throws UnsupportedOperationException {
-        assertEquals(2.0, Calculator.calculate("64.0 & 6.0"), 0.1);
+        Calculator.calculate("64.0 & 6.0");
     }
 }
